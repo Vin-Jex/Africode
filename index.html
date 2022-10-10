@@ -1,0 +1,108 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Africode</title>
+
+    <!-- Material Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Material Icons CDN -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <body>
+    <header class="header">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="./assets/logo.png" alt="Logo" />
+      </div>
+
+      <!-- NAV LINKS -->
+      <div class="header-main">
+        <ul>
+          <li><a href="#" class="active">Watches</a></li>
+          <li><a href="#About" class="">About us</a></li>
+          <li><a href="#products" class="">Products</a></li>
+          <li><a href="#sales" class="">Sales</a></li>
+          <li><a href="#swap" class="">Sell/Swap</a></li>
+        </ul>
+
+        <!-- Side Item Nav -->
+
+        <div class="nav-icons">
+          <span class="material-symbols-outlined"> search </span>
+          <span class="material-symbols-outlined"> person </span>
+          <div></div>
+          <span class="material-symbols-outlined"> calendar_month </span>
+          <div class="notification">3</div>
+        </div>
+      </div>
+    </header>
+
+    <div class="overlay-container">
+      <div class="overlay"></div>
+      <input type="search" name="search" id="search" placeholder="search" />
+    </div>
+
+    <main class="main-container">
+      <div class="watches-left">
+        <div>
+          <h1>BE YOUR TIME <span class="text-green">MANAGER</span></h1>
+          <p>
+            We offer the best deals in our shop. Check them out now. We have
+            awesome stuff on sale for you.
+          </p>
+          <div class="btns">
+            <button>show now</button>
+            <button>
+              <span class="material-symbols-outlined"> favorite </span>
+            </button>
+          </div>
+        </div>
+
+        <div class="checks">
+          <span>
+            <span class="material-symbols-outlined"> done </span>
+            Free shipping
+          </span>
+          <span>
+            <span class="material-symbols-outlined"> done </span>
+            Free returns
+          </span>
+        </div>
+      </div>
+
+      <div class="watches-right">
+        <img src="./assets/watch4.jpg" alt="watc2" />
+        <div class="lock">
+          <span class="material-symbols-outlined"> lock </span>
+        </div>
+        <!-- floating div -->
+        <div class="float">
+          <img src="./assets/user.png" alt="user2" />
+          <p><b>Kike</b> has just purchased these watch now.</p>
+        </div>
+      </div>
+    </main>
+    <!-- Navigate Icon -->
+    <div class="arrows">
+      <span class="material-symbols-outlined"> arrow_back </span>
+      <span class="material-symbols-outlined"> arrow_forward </span>
+    </div>
+  </body>
+</html>
