@@ -281,11 +281,44 @@ html {
   margin-right: 0.6rem;
 }
 
-.menu,
-.times {
-  font-size: 2rem;
-  padding: 1rem;
+.toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
   display: none;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+
+.toggle::before {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  background: #000;
+  transform: translateY(-5px);
+  transition: 0.2s;
+}
+
+.toggle::after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  background: #000;
+  transform: translateY(5px);
+}
+
+.toggle.show-nav::before {
+  transform: translateY(0px) rotate(45deg);
+}
+
+.toggle.show-nav::after {
+  transform: translateY(0px) rotate(-45deg);
 }
 
 @media screen and (max-width: 904px) {
@@ -293,15 +326,8 @@ html {
     grid-template-columns: 1fr;
   }
 
-  .menu {
-    display: block;
-  }
-  .menu,
-  .times {
-    position: absolute;
-    cursor: pointer;
-    right: 0;
-    top: 0;
+  .toggle {
+    display: flex;
   }
 
   .header {
@@ -326,7 +352,17 @@ html {
     justify-content: center;
     width: 100%;
     margin-top: 3rem;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .header-main.show-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3rem;
+    transition: all 0.3s ease-in-out;
   }
 
   .header-main ul {
